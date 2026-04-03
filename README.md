@@ -1,0 +1,2 @@
+# python-assianment
+python fundamental 
