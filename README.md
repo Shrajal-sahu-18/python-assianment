@@ -1,2 +1,2 @@
 # python-assianment
-python fundamental 
+python fundamental .
