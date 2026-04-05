@@ -1,9 +1,3 @@
-# python-assianment
-python fundamental .
+python fundamental 
 
-
-# teacher 
-shradha khapra 
-
-# student 
-prime AIML 1.0
+starting my journey to become an AIML engineer from basic to advance .
