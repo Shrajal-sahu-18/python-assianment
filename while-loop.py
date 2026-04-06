@@ -31,3 +31,18 @@ while(count>=1):
     print(count)
     count-=1
 
+#multiplication table of any number
+
+n = int(input("enter the number"))
+i = 1
+while(i<=10):
+    print(n*i)
+    i+=1
+
+n = int(input("enter the number"))
+i = 0
+while(i<10):
+    print(n*(i+1))
+    i+=1
+
+
