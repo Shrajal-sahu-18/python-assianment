@@ -26,3 +26,13 @@ print(avg(2,2,8))
 def avg(a,b=1):
     return a+b
 print(avg(3,8))
+
+#lambda function
+
+
+sum = lambda a,b: a+b
+print(sum(4,6))
+print(sum(100,456))
+
+avg = lambda a,b,c: (a+b+c)/3
+print(avg(2,2,2))
