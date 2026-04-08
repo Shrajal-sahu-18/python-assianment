@@ -13,3 +13,9 @@ list.append(8)
 print(list)
 list.insert(2,10)
 print(list)
+
+list.sort(reverse=True)
+list.reverse()
+print(list)
+for val in list:
+    print(val)
