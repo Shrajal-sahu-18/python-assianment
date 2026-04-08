@@ -107,3 +107,52 @@ responce = {
     }
 }
 print(responce["data"]["username"])
+
+
+#methods in dictionary
+
+#d.keys
+
+dict = {
+    "name":"shrajal",
+    "age":20,
+    "semester":"3rd",
+}
+dict_keys = dict.keys()
+print(dict_keys)
+dict_keys = list(dict.keys())
+print(type(dict_keys))
+
+#dictionary.value
+
+dict = {
+    "name":"shrajal ",
+    "class":"w3",
+    "semester":"3rd",
+}
+dict_val =list (dict.values())
+print(dict_val)
+print(type(dict_val))
+
+#d.items
+
+dict = {
+    "name":"shrajal",
+    "age":20,
+    "semester":"3rd",
+
+    
+}
+dict_items =list (dict.items())
+print(dict_items)
+print(type(dict_items))
+
+#d.get(val)
+
+dict = {
+    "name":"shrajal",
+    "semester":"3rd",
+    "age":20,
+}
+
+dict_get = dict.get(cgpa)
