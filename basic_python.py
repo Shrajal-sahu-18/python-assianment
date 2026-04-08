@@ -72,3 +72,38 @@ sum = 0
 for val in tup:
     sum+=val
 print(sum)
+
+#dictionary
+
+infor = {
+    "name":"shrajal ",
+    "cgpa":9.2,
+    "subject":("math","science"),
+    3.14:"pI",
+
+
+}
+
+print(type(infor))
+print(infor)
+
+dict = {
+    "name": "shrajal sahu",
+    "branch":"AIML",
+    "semester":"3rd",
+    "cgpa": 6.44,
+    "result": "all clear",
+}
+dict["cgpa"]=9.6
+dict["semester"]="4th"
+print(dict["cgpa"])
+print(dict["semester"])
+
+responce = {
+    "status":200,
+    "data":{
+        "username":"shrajal",
+        "followers":1200,
+    }
+}
+print(responce["data"]["username"])
