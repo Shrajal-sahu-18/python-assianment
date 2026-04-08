@@ -55,3 +55,20 @@ sum = 0
 for val in tup :
     sum+=val
 print(sum)
+
+
+#t.index
+
+tup = (1,2,2,8,9)
+print(tup.index(8))
+
+#tup.count
+tup = (1,2,3,4,5,6,7,7)
+print(tup.count(7))
+
+
+tup = (1,2,3,4,5,6)
+sum = 0
+for val in tup:
+    sum+=val
+print(sum)
