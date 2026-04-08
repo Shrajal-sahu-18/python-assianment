@@ -38,3 +38,20 @@ for var in list:
         print(f"count of x={7} is {count}")
         break
     count+=1
+
+
+tup = (1,2,3,4)
+print(tup)
+print(type(tup))
+print(len(tup))
+
+
+#slicing 
+tup = (1,2,3,4,5,6,7)
+print(tup[1:4])
+
+tup = (1,2,3,4,5,6,7,8)
+sum = 0
+for val in tup :
+    sum+=val
+print(sum)
