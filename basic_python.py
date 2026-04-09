@@ -280,3 +280,23 @@ for name,course in info:
     else:
         dict[name].add(course)
 print(dict)
+
+
+# data = [
+#     ("amit","math"),
+#     ("sumit","math"),
+#    ( "amit","english"),
+#    ( "sumit","english"),
+#     ("amit","math"),
+#     ("sumit","math"),
+# ]
+
+
+# dict = {}
+# for name,subject in data:
+#     if dict.get(name)==None:
+#         dict.update({name:set()})
+#         dict[name].add(subject)
+#     else:
+#         dict[name].add(subject)
+# print(dict)
