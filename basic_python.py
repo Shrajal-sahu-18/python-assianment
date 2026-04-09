@@ -252,4 +252,23 @@ for name,course in info:
         dict[name].add(course)
 print(dict)
 
+info = [
+    ("alice","math"),
+    ("bob","science"),
+    ("alice","science"),
+    ("charlie","math"),
+    ("bob","math"),
+    ("alice","english"),
+    ("charlie","english"),
+]
+
+unique_course = set()
+for name,course in info:
+    unique_course.add(course)
+print(unique_course)
+unique_course_list = list(unique_course)
+#examiner ask convert into a list
+print(unique_course_list)
+print(type(unique_course_list))
+
 
