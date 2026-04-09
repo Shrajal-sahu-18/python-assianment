@@ -282,21 +282,21 @@ for name,course in info:
 print(dict)
 
 
-# data = [
-#     ("amit","math"),
-#     ("sumit","math"),
-#    ( "amit","english"),
-#    ( "sumit","english"),
-#     ("amit","math"),
-#     ("sumit","math"),
-# ]
+data = [
+    ("amit","math"),
+    ("sumit","math"),
+   ( "amit","english"),
+   ( "sumit","english"),
+    ("amit","math"),
+    ("sumit","math"),
+]
 
 
-# dict = {}
-# for name,subject in data:
-#     if dict.get(name)==None:
-#         dict.update({name:set()})
-#         dict[name].add(subject)
-#     else:
-#         dict[name].add(subject)
-# print(dict)
+dict = {}
+for name,subject in data:
+    if dict.get(name)==None:
+        dict.update({name:set()})
+        dict[name].add(subject)
+    else:
+        dict[name].add(subject)
+print(dict)
