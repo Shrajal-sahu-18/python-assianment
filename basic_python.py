@@ -233,3 +233,23 @@ for tup in info:
 print(unique_courses)
 
 
+info = [
+
+    ("alice","math"),
+    ("bob","science"),
+    ("alice","science"),
+    ("charlie","math"),
+    ("bob","math"),
+    ("alice","english"),
+    ("charlie","english"),
+]
+dict = {}
+for name,course in info:
+    if (dict.get(name) is None):
+        dict.update({name:{course}})
+    
+    else:
+        dict[name].add(course)
+print(dict)
+
+
