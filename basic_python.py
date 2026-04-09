@@ -155,4 +155,50 @@ dict = {
     "age":20,
 }
 
-dict_get = dict.get(cgpa)
+
+s = {1,2,3,4,5,6,6,6,6,6,6,6}
+s.add(7)
+print(s)
+
+#sets methods
+
+#s.add
+
+s = {1,2,3,4,5,6}
+s.add(10)
+print(s)
+
+#s.remove
+
+s = {1,2,3,4,5,6,7}
+s.remove(2)
+print(s)
+
+#s.clear
+
+s = {1,2,3,4,5,6,7,8}
+s.clear()
+print(s)
+
+#s.pop
+
+s = {1,2,3,4,5,6,7,8}
+print(s)
+s.pop()
+
+
+
+#s.union
+
+s1 = {1,2,3,4,5,6}
+s2 = {2,3,4,7,8}
+print(s1.union(s2))
+print(s1.intersection(s2))
+
+#s.intersection
+
+s1 = {1,2,3,4,5,6,7,8}
+s2 = {2,3,4,5,6}
+print(s1.intersection(s2))
+
+
