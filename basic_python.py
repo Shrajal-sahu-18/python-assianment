@@ -187,6 +187,21 @@ print(s)
 s.pop()
 
 
+info = [
+    ("alice","math"),
+    ("bob","science"),
+    ("alice","science"),
+    ("charlie","math"),
+    ("bob","math"),
+    ("alice","english"),
+    ("charlie","english"),
+]
+unique_courses = set()
+for everytuple in info:
+    unique_courses.add(everytuple[1])
+print(unique_courses)
+       
+
 
 #s.union
 
