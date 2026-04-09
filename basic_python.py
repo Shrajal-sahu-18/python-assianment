@@ -199,8 +199,10 @@ info = [
 unique_courses = set()
 for everytuple in info:
     unique_courses.add(everytuple[1])
+
 print(unique_courses)
        
+
 
 
 #s.union
@@ -215,5 +217,19 @@ print(s1.intersection(s2))
 s1 = {1,2,3,4,5,6,7,8}
 s2 = {2,3,4,5,6}
 print(s1.intersection(s2))
+
+
+info = [
+    ("shrajal","math"),
+    ("shakti","english"),
+    ("shani","math"),
+    ("tejus","science"),
+    ("aditya","english"),
+]
+
+unique_courses = set()
+for tup in info:
+    unique_courses.add(tup[1])
+print(unique_courses)
 
 
