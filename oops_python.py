@@ -146,3 +146,22 @@ l1.get_info()
 
 l1.get_storage_type()
 l1.cal_discount(40000,10)
+
+
+
+# class student:
+#     def __init__(self,name,cgpa):
+#         self.cgpa = cgpa
+#         self.name = name
+#         #print("constructor was called")
+#     def get_cgpa(self):
+#         return self.cgpa
+# stud1 = student("shrajal",9.88)
+# stud2 = student("shreya",9.77)
+# stud3 = student("shreya goutam",9.66)
+
+# print(stud1.name,stud1.cgpa)
+# print(stud2.name,stud2.cgpa)
+# print(stud3.name,stud3.cgpa)
+# print(stud1.get_cgpa()
+# )
