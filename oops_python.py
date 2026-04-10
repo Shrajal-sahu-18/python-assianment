@@ -31,3 +31,15 @@ class student:
 stud1 = student()
 stud2 = student()
 stud3 = student()
+
+
+class student:
+    def __init__(self,name):
+        self.name=name
+stud1 = student("rahul")
+stud2 = student("urvashi")
+stud3 = student("shradhha")
+print(stud1.name)
+
+print(stud2.name)
+print(stud3.name)
