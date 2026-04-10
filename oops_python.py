@@ -43,3 +43,17 @@ print(stud1.name)
 
 print(stud2.name)
 print(stud3.name)
+
+
+class student:
+    def __init__(self,name,cgpa):
+        self.name = name
+        self.cgpa = cgpa
+
+stud1 = student("shrajal,",9.44)
+stud2 = student("urvashi",9.0)
+stud3 = student("shreya",8.8)
+
+print(stud1.name,stud1.cgpa)
+print(stud2.name,stud2.cgpa)
+print(stud3.name,stud3.cgpa)
