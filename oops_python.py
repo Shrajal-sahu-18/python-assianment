@@ -68,9 +68,26 @@ class student:
 
     def get_cgpa(self):
         return self.cgpa
-stud1 = student("shrajal",9.9)
-stud2 = student("shreya",9.9)
+stud1 = student("sahil",9.9)
+stud2 = student("shradha",9.9)
 print(stud1.get_cgpa())
 print(f"{stud1.name}has cgpa = {stud1.get_cgpa()}")
 print(f"{stud2.name} has cgpa = {stud2.cgpa}")
 print(f"{stud2.name} has cgpa = {stud2.get_cgpa()}")
+
+
+class student:
+    def __init__(self,name,cgpa):
+        self.name = name
+        self.cgpa = cgpa
+    def get_name(self):
+        return self.name
+    def get_cgpa(self):
+        return self.cgpa
+    
+stud1 = student("sahil",9.9)
+stud2 = student("anuradha",9.9)
+
+print(stud1.get_name())
+print(stud2.get_name())
+print(stud1.get_cgpa())
