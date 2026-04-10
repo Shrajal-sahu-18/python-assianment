@@ -91,3 +91,20 @@ stud2 = student("anuradha",9.9)
 print(stud1.get_name())
 print(stud2.get_name())
 print(stud1.get_cgpa())
+
+
+
+#class attribute
+#instance attribute 
+
+
+class student:
+    collage_name = "global engennring"
+
+    def __init__(self,name):
+        self.name = name
+stud1 = student("shrajal")
+
+print(stud1.collage_name)
+    
+print(student.collage_name)
