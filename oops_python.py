@@ -17,3 +17,17 @@ tup = (1,2),
 print(type(tup))
 def fun():
     print("/.....")
+
+
+
+#constructor
+#init_method
+
+
+class student:
+    def __init__(self):
+        print("constructor is called")
+
+stud1 = student()
+stud2 = student()
+stud3 = student()
