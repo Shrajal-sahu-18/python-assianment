@@ -119,3 +119,11 @@ class laptop:
     def __init__(self,ram,storage):
         self.ram = ram
         self.storage = storage
+
+#class method
+@classmethod
+def get_storage_type(cls):
+        print(f"storage type = {cls.storage_type}")
+def get_info(self):
+    print(f"the laptop has {self.ram} & {self.storage}")
+    
