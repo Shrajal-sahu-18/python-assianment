@@ -126,4 +126,23 @@ def get_storage_type(cls):
         print(f"storage type = {cls.storage_type}")
 def get_info(self):
     print(f"the laptop has {self.ram} & {self.storage}")
+
+
+
+    @staticmethod
+
+    def cal_discount(price,discount):
+        final_price = price-((price*discount)/100)
+        print(f"discounted price ={final_price} ")
+
+
+
     
+
+l1 = laptop("16gb","512gb")
+l2 = laptop("8gb","256gb")
+
+l1.get_info()
+
+l1.get_storage_type()
+l1.cal_discount(40000,10)
