@@ -108,3 +108,14 @@ stud1 = student("shrajal")
 print(stud1.collage_name)
     
 print(student.collage_name)
+
+
+#instance method
+
+
+class laptop:
+    storage_type = "ssd"
+
+    def __init__(self,ram,storage):
+        self.ram = ram
+        self.storage = storage
