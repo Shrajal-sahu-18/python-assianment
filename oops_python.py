@@ -387,21 +387,21 @@ class student:
     def set_name(self,name):
         if name != "":
             self._name = name
-            print(self._name)
+            
         else:
             print("empty name is not allowed")
     
     def set_roll_no(self,roll_no):
         if 1<= roll_no <=100:
             self._roll_no = roll_no
-            print(roll_no)
+            
         else:
             print("invaliad roll no")
     
     def set_marks(self,marks):
         if marks>=0:
             self._marks = marks
-            print(self._marks)
+            
         else:
             print("negative marks not allowed")
 
@@ -410,6 +410,6 @@ print(s1.get_name())
 print(s1.get_roll_no())
 print(s1.get_marks())
 s1.set_marks(80)
-s1.set_roll_no(1000)
-s1.set_name("")
-s1.set_marks(-1)
+# s1.set_roll_no(1000)
+# s1.set_name("")
+# s1.set_marks(-1)
