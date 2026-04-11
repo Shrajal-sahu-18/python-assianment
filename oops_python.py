@@ -217,3 +217,22 @@ class adminsatff(employee):
 staff1 = adminsatff("manager")
 print(staff1.start_time,staff1.end_time)
 print(staff1.role)
+
+
+
+#muti_level inheriatene
+class employee:
+     start_time = "10am"
+     end_time = "10pm"
+
+class adminstaff(employee):
+     def __init__(self,role):
+          self.role = role
+
+class accountant(adminstaff):
+     def __init__(self,salary,role):
+          super().__init__(role)
+          self.salary = salary
+
+acc1 = accountant(25_000,"manager")
+print(acc1.start_time,acc1.salary,acc1.role)
