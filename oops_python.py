@@ -236,3 +236,24 @@ class accountant(adminstaff):
 
 acc1 = accountant(25_000,"manager")
 print(acc1.start_time,acc1.salary,acc1.role)
+
+
+
+#multiple inheriatence
+
+class teacher:
+     def __init__(self,salary):
+          self.salary = salary
+
+class student:
+     def __init__(self,gpa):
+          self.gpa = gpa
+
+class ta(teacher,student):
+     def __init__(self,salary,gpa,name):
+          super().__init__(salary)
+          student.__init__(self,gpa)
+          self.name = name
+
+ta1 = ta(15_000,9.3,"shrajal")
+print(ta1.salary,ta1.gpa,ta1.name)
