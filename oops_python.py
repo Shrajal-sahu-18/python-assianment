@@ -187,3 +187,33 @@ accc1 = bank_account("rahul kumar",100_000)
 # print(accc1.name,accc1.get_balance())
 accc1.set_balance(10000)
 # print(accc1._bank_account__balance)
+
+
+
+# #inheriatence
+
+class employee:
+     start_time = "10am"
+     end_time = "6pm"
+
+     def change_time(self,new_balance):
+          self.end_time = new_balance
+
+    
+     
+class teacher(employee):
+     def __init__(self,subject):
+          self.subject = subject
+
+
+class adminsatff(employee):
+     def __init__(self,role):
+          self.role = role
+
+     
+# t1 = teacher("math")
+# t1.change_time("10pm")
+# print(t1.subject,t1.start_time,t1.end_time)
+staff1 = adminsatff("manager")
+print(staff1.start_time,staff1.end_time)
+print(staff1.role)
