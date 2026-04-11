@@ -299,3 +299,15 @@ t1 = teacher()
 t1.get_desigintion()
 
 
+#duck typing
+
+class teacher:
+    def get_desigination(self):
+        print("desiginaton = teacher")
+class accountant:
+    def get_desigination(self):
+        print("desigintion = accountant")
+
+t1 = teacher()
+acc1= accountant()
+acc1.get_desigination()
