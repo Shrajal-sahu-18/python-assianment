@@ -257,3 +257,27 @@ class ta(teacher,student):
 
 ta1 = ta(15_000,9.3,"shrajal")
 print(ta1.salary,ta1.gpa,ta1.name)
+
+
+#Abstraction
+
+
+from abc import ABC,abstractmethod
+
+class animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+class lion(animal):
+    def make_sound(self):
+        print("roor")
+
+class cow(animal):
+    def make_sound(self):
+        print("moo!")
+
+c1 = cow()
+c1.make_sound()
+l1 = lion()
+l1.make_sound()
