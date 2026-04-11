@@ -313,31 +313,59 @@
 # acc1.get_desigination()
 
 
-#practice problem
+# #practice problem
 
-class bank_account:
-    def __init__(self,account_number,owner_name,balance = 0):
-        self.account_number = account_number
-        self.owner_name = owner_name
-        self.balance = balance
+# class bank_account:
+#     def __init__(self,account_number,owner_name,balance = 0):
+#         self.account_number = account_number
+#         self.owner_name = owner_name
+#         self.balance = balance
     
-    def deposit(self,amount):
-        self.balance+=amount
-        print("deposited",amount)
+#     def deposit(self,amount):
+#         self.balance+=amount
+#         print("deposited",amount)
 
-    def withdrawal(self,amount):
-        if amount<=self.balance:
-            self.balance-=amount
-            print("withdrawal",amount)
+#     def withdrawal(self,amount):
+#         if amount<=self.balance:
+#             self.balance-=amount
+#             print("withdrawal",amount)
+#         else:
+#             print("insufficient balance")
+    
+#     def check_balance(self):
+#         print("current_balance",self.balance)
+
+
+# acc1 = bank_account(12345,"shrajal sahu",10_000)
+# acc1.deposit(50_000)
+# acc1.withdrawal(10_000)
+# acc1.check_balance()
+# print(acc1.owner_name,acc1.account_number,acc1.balance)
+
+
+class book:
+    def __init__(self,tittle,author):
+        self.tittle = tittle
+        self.author = author
+        self.reviews = []
+
+    def add_review(self,review):
+        self.reviews.append(review)
+
+    def count_review(self):
+        return len(self.reviews)
+    
+    def display_review(self):
+        if not self.reviews:
+            print("nothing to yet")
         else:
-            print("insufficient balance")
-    
-    def check_balance(self):
-        print("current_balance",self.balance)
+            for i, review in enumerate(self.reviews,1):
+                print(i,review)
 
-
-acc1 = bank_account(12345,"shrajal sahu",10_000)
-acc1.deposit(50_000)
-acc1.withdrawal(10_000)
-acc1.check_balance()
-print(acc1.owner_name,acc1.account_number,acc1.balance)
+b1 = book("python","shrajal")
+b1.add_review("good for learning")
+b1.add_review("good for study")
+b1.display_review()
+print("total",b1.count_review())
+print(b1.reviews)
+print(b1.tittle)
