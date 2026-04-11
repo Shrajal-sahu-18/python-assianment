@@ -281,3 +281,21 @@ c1 = cow()
 c1.make_sound()
 l1 = lion()
 l1.make_sound()
+
+
+
+#polymorphism
+
+
+class employeee:
+    def get_desigintion(self):
+        print("desigination = employeee")
+
+class teacher:
+    def get_desigintion(self):
+        print("desigintion = teacher")
+
+t1 = teacher()
+t1.get_desigintion()
+
+
