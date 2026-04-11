@@ -165,3 +165,25 @@ print(stud2.name,stud2.cgpa)
 print(stud3.name,stud3.cgpa)
 print(stud1.get_cgpa()
 )
+
+
+
+#encapsulation
+
+class bank_account:
+    def __init__(self,name,balance):
+        self.name = name
+        self.__balance = balance#protected#__ = private
+
+    def get_balance(self):
+            return self.__balance
+    
+    def set_balance(self,newbalance):
+        self.__balance = newbalance
+
+
+accc1 = bank_account("rahul kumar",100_000)
+
+# print(accc1.name,accc1.get_balance())
+accc1.set_balance(10000)
+# print(accc1._bank_account__balance)
