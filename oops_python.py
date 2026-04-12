@@ -480,40 +480,60 @@
 
 
 
-from abc import ABC,abstractmethod
+# from abc import ABC,abstractmethod
 
-class Employee(ABC):
-    @abstractmethod
-    def calculate_salary(self):
-        pass
+# class Employee(ABC):
+#     @abstractmethod
+#     def calculate_salary(self):
+#         pass
 
-class Intern(Employee):
-    def __init__(self,stipend):
-        self.stipend = stipend
-    def calculate_salary(self):
-        return self.stipend
+# class Intern(Employee):
+#     def __init__(self,stipend):
+#         self.stipend = stipend
+#     def calculate_salary(self):
+#         return self.stipend
 
-class Fulltimeemployee(Employee):
-    def __init__(self,base_salary,bonus):
-        self.base_salary = base_salary
-        self.bonus = bonus
+# class Fulltimeemployee(Employee):
+#     def __init__(self,base_salary,bonus):
+#         self.base_salary = base_salary
+#         self.bonus = bonus
     
-    def calculate_salary(self):
-        return self.base_salary+self.bonus
+#     def calculate_salary(self):
+#         return self.base_salary+self.bonus
     
-class contractemployee(Employee):
-    def __init__(self,hourly_rate,hours):
-        self.hourly_rate = hourly_rate
-        self.hours = hours
+# class contractemployee(Employee):
+#     def __init__(self,hourly_rate,hours):
+#         self.hourly_rate = hourly_rate
+#         self.hours = hours
 
-    def calculate_salary(self):
-        return self.hourly_rate*self.hours
+#     def calculate_salary(self):
+#         return self.hourly_rate*self.hours
 
 
-c1 = Intern(10_000)
-F1 = Fulltimeemployee(60_000,20_00)
-co = contractemployee(300,5)
+# c1 = Intern(10_000)
+# F1 = Fulltimeemployee(60_000,20_00)
+# co = contractemployee(300,5)
 
-print(c1.calculate_salary())
-print(F1.calculate_salary())
-print(co.calculate_salary())
+# print(c1.calculate_salary())
+# print(F1.calculate_salary())
+# print(co.calculate_salary())
+
+
+
+
+class person:
+    def __init__(self,name = None,age = None,address = None):
+        self.name =name
+        self.age = age
+        self.address = address
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.address)
+
+p1 = person(name = "abc")
+p1.display()
+p2 = person(name = "abc",age = 20)
+p2.display()
+p3 = person(name = "abc",age = 20,address = "abc colony")
+p3.display()
