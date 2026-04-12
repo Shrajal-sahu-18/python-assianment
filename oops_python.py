@@ -551,3 +551,37 @@ p1 = player("shradha",2)
 p2 = player("shreya",2)
 
 print(player.player_count)
+
+
+
+class Herbivore:
+    def __init__(self):
+        super().__init__()
+        self.food1 = "plants"
+    def eat_plants(self):
+        return "herbivore eats", self.food1
+class carnivore:
+    def __init__(self):
+        super().__init__()
+        self.food2 = "meat"
+    def eat_meat(self):
+        return "carnivors",self.food2
+class omnivore:
+    def __init__(self):
+        super().__init__()
+        self.food3 = "plants & meats"
+    def eat_both(self):
+        return "omnivore eats",self.food3
+
+class bear(Herbivore,carnivore,omnivore):
+    def __init__(self):
+        super().__init__()
+
+    def info(self):
+        print("I am a bear")
+
+b = bear()
+b.info()
+print(b.eat_plants())
+print(b.eat_meat())
+print(b.eat_both())
