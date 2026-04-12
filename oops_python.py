@@ -538,7 +538,7 @@ p2.display()
 p3 = person(name = "abc",age = 20,address = "abc colony")
 p3.display()
 
-
+#q-7
 class player:
     player_count = 0
     def __init__(self,name,level):
@@ -553,7 +553,7 @@ p2 = player("shreya",2)
 print(player.player_count)
 
 
-
+#q-8
 class Herbivore:
     def __init__(self):
         super().__init__()
