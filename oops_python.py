@@ -342,7 +342,7 @@ acc1.withdrawal(10_000)
 acc1.check_balance()
 print(acc1.owner_name,acc1.account_number,acc1.balance)
 
-
+#q-1
 class book:
     def __init__(self,tittle,author):
         self.tittle = tittle
@@ -370,7 +370,7 @@ print("total",b1.count_review())
 print(b1.reviews)
 print(b1.tittle)
 
-
+#q-2
 
 class student:
     def __init__(self,name,roll_no,marks):
@@ -414,7 +414,7 @@ s1.set_roll_no(1000)
 s1.set_name("")
 s1.set_marks(-1)
 
-
+#q-3
 
 class shape:
     def area(self):
@@ -447,7 +447,7 @@ print(c.area())
 print(r.area())
 print(t.area())
 
-
+#q-4
 from abc import ABC,abstractmethod
 class vehicle(ABC):
     def __init__(self,model,brand):
@@ -478,7 +478,7 @@ c1.show_details()
 b1.show_details()
 
 
-
+#q-5
 
 from abc import ABC,abstractmethod
 
@@ -520,7 +520,7 @@ print(co.calculate_salary())
 
 
 
-
+#q-6
 class person:
     def __init__(self,name = None,age = None,address = None):
         self.name =name
