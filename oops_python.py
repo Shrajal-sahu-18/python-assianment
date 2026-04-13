@@ -585,3 +585,45 @@ b.info()
 print(b.eat_plants())
 print(b.eat_meat())
 print(b.eat_both())
+
+
+
+class user:
+    def __init__(self,name):
+        self.nae = name
+    def send_message(self,chatroom,text):
+        msg = message(self,text)
+        chatroom.add.message(msg)
+
+class message:
+    def __init__(self,sender,text):
+        self.sender = sender
+        self.text = text
+
+class chatroom:
+    def __init__(self):
+        self.users = []
+        self.messages = []
+    def join(self,user):
+        self.users.append(user)
+        print(user.name,"joined the chat")
+    def leave(self,user):
+        self.remove.append(user)
+        print(user.name,"leave the chat")
+    def add_message(self,message):
+        self.message.append(message)
+        print(message.sender.name+":",message.text)
+    def show_chat(self):
+        print("\n chat history")
+        for msg in self.message:
+            print(msg.sender.name+":",msg.text)
+    
+u1 = user("shrajal")
+u2 = user("aditya")
+chat  = chatroom()
+chat.join(u1)
+chat.join(u2)
+u1.send_message(chat,"hello")
+u2.send.send_message(chat,"hi bro")
+chat.show_chat()
+chat.leave(u2)
