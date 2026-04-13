@@ -23,3 +23,14 @@ except ZeroDivisionError:
 else:
 
     print(f"ans = {ans}")
+
+
+
+try:
+    x = int(input("enter x:"))
+    ans = 10/x
+except ValueError:
+    print("invalid input")
+
+else:
+    print("f ans = {ans}")
