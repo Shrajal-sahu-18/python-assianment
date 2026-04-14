@@ -78,3 +78,14 @@ print(type(json_str),json_str)
 json_str = '{"name":"shrajal", "isteacher":true}'
 py_obj = json.loads(json_str)
 print(type(py_obj),py_obj)
+
+
+
+
+data  = {
+    "name":"shrajal",
+    "isteacher":True
+}
+
+with open("data.json","w") as f:
+    json.dump(data,f, indent=4,sort_keys = True)
