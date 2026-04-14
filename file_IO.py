@@ -54,3 +54,21 @@ print(sqare)
 nums = [1,2,3,-1,-2,-3]
 nums = [0 if val<0 else val for val in nums]
 print(nums)
+
+
+words = ["hello","python","apna collage"]
+
+words = [val.upper() for val in words]
+print(words)
+
+
+
+import json
+
+py_obj = {
+    "name":"shrajal",
+    "isteacher":True
+}
+
+json_str = json.dumps(py_obj)
+print(type(json_str),json_str)
