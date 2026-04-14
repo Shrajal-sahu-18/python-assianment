@@ -37,3 +37,11 @@ else:
 
 finally:
     print("end of program")
+
+
+#list comprehension
+
+sqares = []
+for i in range(6):
+    sqares.append(i*i)
+print(sqares)
