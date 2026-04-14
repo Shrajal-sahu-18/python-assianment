@@ -72,3 +72,9 @@ py_obj = {
 
 json_str = json.dumps(py_obj)
 print(type(json_str),json_str)
+
+
+
+json_str = '{"name":"shrajal", "isteacher":true}'
+py_obj = json.loads(json_str)
+print(type(py_obj),py_obj)
