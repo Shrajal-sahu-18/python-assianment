@@ -16,5 +16,11 @@ def clean_data(data):
             raw_rating = text_to_num[raw_rating]
         user["rating"] = raw_rating
         print(user)
+
+        #missing data
+        raw_age = user.get("age")
+        if (raw_age == None):
+            user["age"] = None
 clean_data(data)
+
         
