@@ -9,6 +9,8 @@ print(data,type(data))
 
 #clean and structure the data
 def clean_data(data):
+    unique_users = set()
+    cleaned_users = []
     text_to_num = {"one":1,"two":2,"three":3,"four":4,"five":5}
     for user in data:
         raw_rating = user["rating"].strip().lower()
@@ -21,6 +23,13 @@ def clean_data(data):
         raw_age = user.get("age")
         if (raw_age == None):
             user["age"] = None
+
+
+        if (user["name"].strip() in unique_users):
+            continue
+        unique_users.add(user["name"])
+        cleaned_users.append(user)
+    return cleaned_users
 clean_data(data)
 
         
