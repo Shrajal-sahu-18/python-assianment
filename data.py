@@ -30,6 +30,8 @@ def clean_data(data):
         unique_users.add(user["name"])
         cleaned_users.append(user)
     return cleaned_users
-clean_data(data)
+data = clean_data(data)
+print(data)
+
 
         
