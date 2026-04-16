@@ -46,6 +46,7 @@ def get_insights(data):
     for user in data:
         if (float(user["rating"])<3):
             poor_rating+=1
+    print(f"percentage of user with poor rating = {poor_rating/len(data)*100}")
 get_insights(data)
 
 
