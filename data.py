@@ -34,4 +34,14 @@ data = clean_data(data)
 print(data)
 
 
+#meaningfull insights
+def get_insights(data):
+    tot_rating = 0
+    for user in data:
+        tot_rating+=float(user["rating"])
+    print(f"avg_rating = {tot_rating/len(data)}")
+get_insights(data)
+
+
+
         
