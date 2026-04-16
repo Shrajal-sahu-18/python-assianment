@@ -40,8 +40,13 @@ def get_insights(data):
     for user in data:
         tot_rating+=float(user["rating"])
     print(f"avg_rating = {tot_rating/len(data)}")
-get_insights(data)
 
+    #percentage of user with low rating
+    poor_rating = 0
+    for user in data:
+        if (float(user["rating"])<3):
+            poor_rating+=1
+get_insights(data)
 
 
         
