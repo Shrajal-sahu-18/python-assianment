@@ -50,4 +50,20 @@ def get_insights(data):
 get_insights(data)
 
 
+def get_recommendations(data):
+    recomdations = []
+    for user in data:
+        current_recom = {}
+        current_recom["name"] = user["name"]
+        if (float(user["rating"]))<=4:
+            current_recom["brand"] = ["apple"]
+        else:
+            current_recom["brand"] = ["samsung"]
+
+        recomdations.append(current_recom) 
+    return recomdations
+print(get_recommendations(data))
+
+
+
         
