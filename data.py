@@ -1,3 +1,9 @@
+#data thinking
+#data cleaning
+
+
+
+
 import json
 
 def load_data(filename):
@@ -24,7 +30,7 @@ def clean_data(data):
         if (raw_age == None):
             user["age"] = None
 
-
+        #de duplication 
         if (user["name"].strip() in unique_users):
             continue
         unique_users.add(user["name"])
