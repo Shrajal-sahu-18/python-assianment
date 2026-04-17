@@ -62,6 +62,7 @@ def get_recommendations(data):
 
         recomdations.append(current_recom) 
     return recomdations
+get_recommendations(data)
 print(get_recommendations(data))
 
 
