@@ -50,6 +50,8 @@ def get_insights(data):
 get_insights(data)
 
 
+#recomdations page for begineers
+
 def get_recommendations(data):
     recomdations = []
     for user in data:
