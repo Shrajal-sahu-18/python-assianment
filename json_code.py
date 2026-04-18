@@ -13,3 +13,8 @@ with open("sample.txt","r") as f:
     data = f.read()
     print("logs:\n")
     print(data)
+
+
+nums = [5,10,15,20,25]
+new_nums = [ val for val in nums if val>15 ]
+print(new_nums)
