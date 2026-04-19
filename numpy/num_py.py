@@ -1,21 +1,29 @@
+# import numpy as np
+# import time
+
+# size = 10_000_000
+
+# py_list = list(range(size))
+# start = time.time()
+# sqare = [x**2 for x in py_list]
+# end = time.time()
+# print(f"pythonlist time = {end-start}")
+
+# np_arr = np.array(py_list)
+# start = time.time()
+# sqare = np_arr ** 2
+# end = time.time()
+# print(f"numpy array time = {end-start}")
+
+
+# import sys
+# print(f"size of py_list = {sys.getsizeof(py_list)*len(py_list)}bytes")
+# print(f"size of numpy array = {np_arr.nbytes} bytes")
+
+
 import numpy as np
-import time
+arr1 = np.array([1,2,3,4,5,6])
+print(arr1,type(arr1),arr1.shape,arr1.dtype)
 
-size = 10_000_000
-
-py_list = list(range(size))
-start = time.time()
-sqare = [x**2 for x in py_list]
-end = time.time()
-print(f"pythonlist time = {end-start}")
-
-np_arr = np.array(py_list)
-start = time.time()
-sqare = np_arr ** 2
-end = time.time()
-print(f"numpy array time = {end-start}")
-
-
-import sys
-print(f"size of py_list = {sys.getsizeof(py_list)*len(py_list)}bytes")
-print(f"size of numpy array = {np_arr.nbytes} bytes")
+arr2 = np.array([1,2,3,4,5,"prime"])
+print(arr2.dtype,arr2.shape,arr2,type(arr2))
