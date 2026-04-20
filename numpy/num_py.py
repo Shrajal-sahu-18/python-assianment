@@ -49,3 +49,6 @@ print(arr6)
 
 arr7 = np.eye(3,dtype = "int64")
 print(arr7)
+
+arr8  = np.arange(0,10)
+print(arr8)
