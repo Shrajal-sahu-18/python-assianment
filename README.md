@@ -7,6 +7,6 @@ learning journey
 - python basic
 - numpy
 
-# teacher 
-shradha khapra mam
+## teacher 
+Shradha khapra ma'am
 
