@@ -52,3 +52,8 @@ print(arr7)
 
 arr8  = np.arange(0,10)
 print(arr8)
+
+arr = np.array([[1,2,3],[4,5,6]])
+print(arr,arr.shape)
+reshaped = arr.reshape(3,2)
+print(reshaped)
