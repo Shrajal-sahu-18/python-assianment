@@ -57,3 +57,7 @@ arr = np.array([[1,2,3],[4,5,6]])
 print(arr,arr.shape)
 reshaped = arr.reshape(3,2)
 print(reshaped)
+
+#for converting 2d array to 1d array
+flattened = arr.flatten()
+print(flattened) 
