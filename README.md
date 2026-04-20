@@ -1,4 +1,4 @@
-this repo contains my daily python
+#This repo contains my daily python
 learning journey
 -python basic
 -numpy
