@@ -39,3 +39,6 @@ print(arr3,arr3.shape)
 
 arr4 = np.zeros((2,3),dtype = "int64")
 print(arr4,arr4.dtype)
+
+arr5 = np.ones((2,3),dtype = "int64")
+print(arr5,arr5.shape,arr5.dtype)
