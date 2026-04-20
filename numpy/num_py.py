@@ -31,3 +31,9 @@ print(arr2.dtype,arr2.shape,arr2,type(arr2))
 
 arr2d = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(arr2d.shape,arr2d.dtype,arr2d,type(arr2d))
+
+
+#zeros in numpy
+arr3 = np.zeros((2,3))
+print(arr3,arr3.shape)
+
