@@ -37,3 +37,5 @@ print(arr2d.shape,arr2d.dtype,arr2d,type(arr2d))
 arr3 = np.zeros((2,3))
 print(arr3,arr3.shape)
 
+arr4 = np.zeros((2,3),dtype = "int64")
+print(arr4,arr4.dtype)
