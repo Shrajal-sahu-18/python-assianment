@@ -46,3 +46,6 @@ print(arr5,arr5.shape,arr5.dtype)
 
 arr6 = np.full((2,3),100)
 print(arr6)
+
+arr7 = np.eye(3,dtype = "int64")
+print(arr7)
