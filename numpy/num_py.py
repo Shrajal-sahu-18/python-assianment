@@ -42,3 +42,7 @@ print(arr4,arr4.dtype)
 
 arr5 = np.ones((2,3),dtype = "int64")
 print(arr5,arr5.shape,arr5.dtype)
+
+
+arr6 = np.full((2,3),100)
+print(arr6)
