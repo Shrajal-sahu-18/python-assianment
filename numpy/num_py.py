@@ -68,3 +68,8 @@ arr1 = np.array([[1,2,3],[4,5,6]])
 print(arr1[0][2])
 print(arr1[1][1])
 print(arr[3])
+
+#fancy indexing
+arr = np.array([1,2,3,4,5,6])
+idx = [2,3,4]
+print(arr[idx])
