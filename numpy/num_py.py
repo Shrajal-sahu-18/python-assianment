@@ -121,3 +121,7 @@ arr1 = np.array([3+5j])
 arr2 = np.array([3+5j])
 print(arr1+arr2)
 print(arr1-arr2)
+
+#object data type
+arr = np.array(["prime",{1,2,3},3.14])
+print(arr.dtype)
