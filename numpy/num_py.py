@@ -136,3 +136,19 @@ sum_row = np.sum(arr2d,axis = 1)
 print(sum_row)
 print(arr2d[0:2,2:])
 print(arr2d[0:2,1:2])
+
+
+
+#3d array
+arr3d = np.array([[[1,2],[3,4],[5,6]],[[7,8],[9,10],[11,12]]])# 2 x 3 x2
+print(arr3d,arr3d.shape)
+
+#indexing
+print(arr3d[0,1,1])
+print(arr3d[0,2,1])
+print(arr3d[1,1,1])
+#slicing
+print(arr3d[:,0,:]) #first row from both layers
+print(arr3d[:,:,0]) #column
+arr3d[:,0,:] = 99
+print(arr3d)
