@@ -61,3 +61,10 @@ print(reshaped)
 #for converting 2d array to 1d array
 flattened = arr.flatten()
 print(flattened) 
+
+#normal indexing
+arr = np.array([1,2,3,4,5,6,7])
+arr1 = np.array([[1,2,3],[4,5,6]])
+print(arr1[0][2])
+print(arr1[1][1])
+print(arr[3])
