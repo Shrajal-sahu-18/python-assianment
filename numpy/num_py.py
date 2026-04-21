@@ -107,3 +107,8 @@ print(sub_arr)
 sub_arr[0] = 200
 print(sub_arr)
 print(arr)
+
+
+#string data type 
+arr = np.array([1,2,3,4,5.4,"prime"])
+print(arr,arr.dtype)
