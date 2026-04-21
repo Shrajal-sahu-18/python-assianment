@@ -81,3 +81,12 @@ arr = np.array([1,2,3,4,5,6])
 print(arr[arr>2])
 print("even number",arr[arr % 2 == 0])
 print("odd number",arr[arr % 2 != 0])
+
+
+#slicing
+arr  = np.array([1,2,3,4,5,6])
+print(arr[1:4])
+print(arr[2:6])
+print(arr[:5])
+print(arr[0:])
+print(arr[::2])
