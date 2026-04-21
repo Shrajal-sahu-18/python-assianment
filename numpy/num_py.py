@@ -116,3 +116,8 @@ print(arr,arr.dtype)
 #complex data type
 arr = np.array([3+5j])
 print(arr,arr.dtype)
+
+arr1 = np.array([3+5j])
+arr2 = np.array([3+5j])
+print(arr1+arr2)
+print(arr1-arr2)
