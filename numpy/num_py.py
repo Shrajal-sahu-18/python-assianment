@@ -125,3 +125,14 @@ print(arr1-arr2)
 #object data type
 arr = np.array(["prime",{1,2,3},3.14])
 print(arr.dtype)
+
+#multidimensional array
+arr2d = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr2d,arr2d.shape)
+print(np.sum(arr2d))
+sum_column = np.sum(arr2d,axis = 0)
+print(sum_column)
+sum_row = np.sum(arr2d,axis = 1)
+print(sum_row)
+print(arr2d[0:2,2:])
+print(arr2d[0:2,1:2])
