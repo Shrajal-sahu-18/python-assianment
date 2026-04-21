@@ -73,3 +73,11 @@ print(arr[3])
 arr = np.array([1,2,3,4,5,6])
 idx = [2,3,4]
 print(arr[idx])
+
+
+
+#bollean indexing
+arr = np.array([1,2,3,4,5,6])
+print(arr[arr>2])
+print("even number",arr[arr % 2 == 0])
+print("odd number",arr[arr % 2 != 0])
