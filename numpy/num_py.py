@@ -203,3 +203,4 @@ print(np.exp(arr))
 #rounding value
 arr = np.array([1,2,3,4,5])
 print(np.unique(arr))
+print(np.sort(arr))
