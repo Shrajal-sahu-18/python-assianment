@@ -198,3 +198,8 @@ arr = np.array([1,2,3,4,5])
 print(np.log(arr))
 print(np.log10(arr))
 print(np.exp(arr))
+
+
+#rounding value
+arr = np.array([1,2,3,4,5])
+print(np.unique(arr))
