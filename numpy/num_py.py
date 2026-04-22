@@ -170,3 +170,8 @@ print(normalized_array)
 print(mean)
 print(std_dev)
 print(np.sqrt(5/4))
+
+
+#mathematical fnx
+arr = np.array([1,2,3,4,5])
+print(np.sum(arr))
