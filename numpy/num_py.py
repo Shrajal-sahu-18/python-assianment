@@ -152,3 +152,11 @@ print(arr3d[:,0,:]) #first row from both layers
 print(arr3d[:,:,0]) #column
 arr3d[:,0,:] = 99
 print(arr3d)
+
+
+#vectorization and broadcasting
+arr = np.array([1,2,3,4,5,6])
+arr1 = np.array([7,8,9,10,11,12])
+print(arr**2)
+print(arr + 10)
+print(arr+arr1)
