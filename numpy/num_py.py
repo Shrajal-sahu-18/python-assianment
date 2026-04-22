@@ -160,3 +160,13 @@ arr1 = np.array([7,8,9,10,11,12])
 print(arr**2)
 print(arr + 10)
 print(arr+arr1)
+
+#noramalize
+arr = np.array([[1,2],[3,4]])
+mean = (np.mean(arr))
+std_dev = (np.std(arr))
+normalized_array = (arr-mean)/std_dev
+print(normalized_array)
+print(mean)
+print(std_dev)
+print(np.sqrt(5/4))
