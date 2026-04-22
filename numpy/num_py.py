@@ -184,3 +184,8 @@ print(np.mean(arr))
 print(np.std(arr))
 print(np.median(arr))
 print(np.var(arr))
+
+
+#power function
+arr = np.array([1,2,3,4,5])
+print(np.aqare(arr))
