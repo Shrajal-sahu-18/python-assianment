@@ -188,6 +188,11 @@ print(np.var(arr))
 
 #power function
 arr = np.array([1,2,3,4,5])
-print(np.sqare(arr))
+print(np.square(arr))
 print(np.sqrt(arr))
 print(np.pow(arr,3))
+
+
+#log function
+arr = np.array([1,2,3,4,5])
+print(np.log(arr))
