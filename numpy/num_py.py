@@ -196,3 +196,4 @@ print(np.pow(arr,3))
 #log function
 arr = np.array([1,2,3,4,5])
 print(np.log(arr))
+print(np.log10(arr))
