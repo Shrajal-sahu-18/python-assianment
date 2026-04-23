@@ -8,3 +8,14 @@ info = {
 }
 df = pd.DataFrame(info)
 print(df)
+
+#dataframe with dictionary
+info = {
+    "name":["alice","bob","charlie"],
+    "age":[20,21,22],
+    "gpa":[7.9,7.5,9.0]
+}
+df = pd.DataFrame(info)
+print(df)
+print(df.index)
+print(df.columns)
