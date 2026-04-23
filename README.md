@@ -1,12 +1,13 @@
-#python learning journey
+#Python learning journey
 
 This repo contains my daily python
 learning journey
 
 ## Topic covered:
-- python basic
-- numpy
+- Python basic
+- Numpy
+- Pandas
 
-## teacher 
+## Teacher 
 Shradha khapra ma'am
 
