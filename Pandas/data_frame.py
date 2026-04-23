@@ -19,3 +19,9 @@ df = pd.DataFrame(info)
 print(df)
 print(df.index)
 print(df.columns)
+
+
+#DataFrame with list 
+
+df = pd.DataFrame([["bob",21],["alice",22],["charlie",23]],columns = ["name","age"])
+print(df)
