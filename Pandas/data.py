@@ -20,3 +20,4 @@ df.isnull()
 df.isna()
 df.isnull().sum()
 df.dropna() #empty row drop
+df.dropna(axis=1)
