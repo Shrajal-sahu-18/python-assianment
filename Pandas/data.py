@@ -22,3 +22,8 @@ df.isnull().sum()
 df.dropna() #empty row drop
 df.dropna(axis=1)
 df.fillna(0)
+
+# practice problem
+age_mean = df["age"].mean()
+cleaned_data = df.copy()
+cleaned_data["age"] = cleaned_data["age"].fillna(age_mean)
