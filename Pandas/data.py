@@ -14,3 +14,4 @@ print(df.info()) #for information
 print(df.shape) #row and column
 print(df.describe) #for details
 print(df.columns) #for columns
+print(df.nunique()) #for unique value
