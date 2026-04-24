@@ -13,3 +13,4 @@ print(df.sample(5)) #for random value
 print(df.info()) #for information
 print(df.shape) #row and column
 print(df.describe) #for details
+print(df.columns) #for columns
