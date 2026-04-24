@@ -17,3 +17,4 @@ print(df.columns) #for columns
 print(df.nunique()) #for unique value
 
 df.isnull()
+df.isna()
