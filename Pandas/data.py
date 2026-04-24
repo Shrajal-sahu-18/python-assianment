@@ -10,4 +10,5 @@ print(df)
 print(df.head())  #first five row
 print(df.tail())  #last five rows
 print(df.sample(5)) #for random value
-print(df.info())
+print(df.info()) #for information
+print(df.shape) #row and column
