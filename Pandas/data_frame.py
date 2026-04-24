@@ -33,3 +33,6 @@ import numpy as np
 np_arr = np.array([[1,2,3],[4,5,6]])
 df = pd.DataFrame(np_arr,columns = ["a","b","c"])
 print(df)
+
+
+

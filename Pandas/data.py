@@ -8,3 +8,4 @@ print(df)
 
 #methods in pandas
 print(df.head())
+print(df.tail())
