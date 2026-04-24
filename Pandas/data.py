@@ -18,3 +18,4 @@ print(df.nunique()) #for unique value
 
 df.isnull()
 df.isna()
+df.isnull().sum()
