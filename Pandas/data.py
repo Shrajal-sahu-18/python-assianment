@@ -7,5 +7,6 @@ print(df)
 # print(df)
 
 #methods in pandas
-print(df.head())
-print(df.tail())
+print(df.head())  #first five row
+print(df.tail())  #last five rows
+print(df.sample(5)) #for random value
