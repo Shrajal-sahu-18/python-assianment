@@ -21,3 +21,4 @@ df.isna()
 df.isnull().sum()
 df.dropna() #empty row drop
 df.dropna(axis=1)
+df.fillna(0)
