@@ -19,3 +19,4 @@ print(df.nunique()) #for unique value
 df.isnull()
 df.isna()
 df.isnull().sum()
+df.dropna() #empty row drop
