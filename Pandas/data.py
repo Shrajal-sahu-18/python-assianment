@@ -39,3 +39,4 @@ df = pd.read_csv("raw_data.csv")
 # print(df2,df2.dtypes)
 
 print(df["gender"].str.lower())
+print(df["gender"].str.upper())
