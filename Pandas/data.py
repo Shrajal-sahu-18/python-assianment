@@ -46,8 +46,15 @@ df = pd.read_csv("raw_data.csv")
 # print(df["country"].str.contains("india", case=False))
 
 df = pd.read_csv("globalAirQuality.csv")
-df["timestamp"] = pd.to_datetime(df["timestamp"])
-print(df["timestamp"].dtypes)
+# df["timestamp"] = pd.to_datetime(df["timestamp"])
+# print(df["timestamp"].dtypes)
 
-date_str = pd.Series([pd.to_datetime("2026-12-31")])
-print(type(date_str.dtypes))
+# date_str = pd.Series([pd.to_datetime("2026-12-31")])
+# print(type(date_str.dtypes))
+
+
+#filtiring data
+#selecting data
+print(df["country"])
+print(df["city"])
+print(df[["city","aqi"]])
