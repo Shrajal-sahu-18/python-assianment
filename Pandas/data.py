@@ -31,9 +31,11 @@ import pandas as pd
 
 #type converstion
 df = pd.read_csv("raw_data.csv") 
-print(df)
-print(df.dtypes)
-df2 = df.copy()
-df2 = df2.fillna(0)
-df2["age"]  = df2["age"].astype("int64")
-print(df2,df2.dtypes)
+# print(df)
+# print(df.dtypes)
+# df2 = df.copy()
+# df2 = df2.fillna(0)
+# df2["age"]  = df2["age"].astype("int64")
+# print(df2,df2.dtypes)
+
+print(df["gender"].str.lower())
