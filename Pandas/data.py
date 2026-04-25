@@ -48,3 +48,6 @@ df = pd.read_csv("raw_data.csv")
 df = pd.read_csv("globalAirQuality.csv")
 df["timestamp"] = pd.to_datetime(df["timestamp"])
 print(df["timestamp"].dtypes)
+
+date_str = pd.Series([pd.to_datetime("2026-12-31")])
+print(type(date_str.dtypes))
