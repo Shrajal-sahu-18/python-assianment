@@ -20,3 +20,12 @@ print(df.iat[0,3])
 cities = df["city"].copy()
 cities[0] = "mumbai"
 print(cities)
+
+
+#filtiring data
+clean_data = df.copy()
+# clean_data= clean_data[clean_data["aqi"]>=100]
+# print(clean_data)
+clean_data = clean_data[(clean_data["aqi"]>=100) & (clean_data["temperature"]>=30)][["aqi","city"]]
+# print(clean_data)
+print(clean_data)
