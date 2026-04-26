@@ -55,3 +55,8 @@ df = pd.read_csv("raw_data.csv")
 print(df)
 df2 = df.copy()
 df2["tax"] = df2["income"].apply(lambda x:"20%" if x>=50000 else "10%")
+df2["gender"] = df2["gender"].fillna("Unknown")
+gender_age = {"Male":"M","Female":"F","Unknown":"U"}
+
+df2["gender"] = df2["gender"].map(gender_age)
+print(df2)
