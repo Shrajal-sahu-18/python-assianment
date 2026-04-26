@@ -1,6 +1,6 @@
 import pandas as pd
 
-# df = pd.read_csv("raw_data.csv")
+df = pd.read_csv("raw_data.csv")
 # print(df)
 
 # # df = pd.read_json("empolyee_data.json")
@@ -23,14 +23,14 @@ import pandas as pd
 # df.dropna(axis=1)
 # df.fillna(0)
 
-# # practice problem
+# # # practice problem
 # age_mean = df["age"].mean()
 # cleaned_data = df.copy()
 # cleaned_data["age"] = cleaned_data["age"].fillna(age_mean)
 
 
-#type converstion
-df = pd.read_csv("raw_data.csv") 
+# #type converstion
+# df = pd.read_csv("raw_data.csv") 
 # print(df)
 # print(df.dtypes)
 # df2 = df.copy()
@@ -45,16 +45,13 @@ df = pd.read_csv("raw_data.csv")
 # print(df["country"].str.contains("US"))
 # print(df["country"].str.contains("india", case=False))
 
-df = pd.read_csv("globalAirQuality.csv")
+# df = pd.read_csv("globalAirQuality.csv")
 # df["timestamp"] = pd.to_datetime(df["timestamp"])
 # print(df["timestamp"].dtypes)
 
 # date_str = pd.Series([pd.to_datetime("2026-12-31")])
 # print(type(date_str.dtypes))
 
-
-#filtiring data
-#selecting data
-print(df["country"])
-print(df["city"])
-print(df[["city","aqi"]])
+print(df)
+df2 = df.copy()
+df2["tax"] = df2["income"].apply(lambda x:"20%" if x>=50000 else "10%")
