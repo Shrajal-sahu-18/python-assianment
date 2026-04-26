@@ -15,3 +15,8 @@ print(df.iloc[0:2,1:3])
 
 print(df.at[0,"city"]) #print single value
 print(df.iat[0,3])
+
+#copy create karna
+cities = df["city"].copy()
+cities[0] = "mumbai"
+print(cities)
