@@ -61,4 +61,5 @@ gender_age = {"Male":"M","Female":"F","Unknown":"U"}
 df2["gender"] = df2["gender"].map(gender_age)
 df2 = df2.assign(new_income = df2["income"] * 1.1)
 df2["country"] = df2["country"].replace("USA","US")
+df2.columns = ["Id","Name","Age","Country","Gender","Income","Tax","New_income"]
 print(df2)
