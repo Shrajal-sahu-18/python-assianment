@@ -59,4 +59,5 @@ df2["gender"] = df2["gender"].fillna("Unknown")
 gender_age = {"Male":"M","Female":"F","Unknown":"U"}
 
 df2["gender"] = df2["gender"].map(gender_age)
+df2 = df2.assign(new_income = df2["income"] * 1.1)
 print(df2)
