@@ -6,7 +6,12 @@ print(df[["country","aqi"]])
 
 #row
 print(df.loc[0:1]) # slicing starting index : included last index
+
+#cells-row_column
 print(df.loc[0:2,["country","city","latitude","aqi"]])
 
 print(df.iloc[0:3,1:5]) #slicing starting index : ending index not included
 print(df.iloc[0:2,1:3])
+
+print(df.at[0,"city"]) #print single value
+print(df.iat[0,3])
