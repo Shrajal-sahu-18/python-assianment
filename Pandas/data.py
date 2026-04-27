@@ -65,3 +65,4 @@ df2.columns = ["Id","Name","Age","Country","Gender","Income","Tax","New_income"]
 df2.rename(columns = {"income":"salary"})
 df2.rename(index = {1:"one"})
 df2.sort_values("income")
+df2.sort_values("income" ,ascending= False)
