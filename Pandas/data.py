@@ -66,3 +66,6 @@ df2.rename(columns = {"income":"salary"})
 df2.rename(index = {1:"one"})
 df2.sort_values("income")
 df2.sort_values("income" ,ascending= False)
+
+#reset
+df2.reset.index()
