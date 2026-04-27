@@ -68,4 +68,5 @@ df2.sort_values("income")
 df2.sort_values("income" ,ascending= False)
 
 #reset
-df2.reset.index()
+df2.reset_index()
+df2.reset_index(drop = True)
