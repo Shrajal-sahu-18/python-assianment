@@ -63,4 +63,4 @@ df2 = df2.assign(new_income = df2["income"] * 1.1)
 df2["country"] = df2["country"].replace("USA","US")
 df2.columns = ["Id","Name","Age","Country","Gender","Income","Tax","New_income"]
 df2.rename(columns = {"income":"salary"})
-print(df2)
+df2.rename(index = {1:"one"})
