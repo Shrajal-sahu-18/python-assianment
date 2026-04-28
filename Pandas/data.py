@@ -81,6 +81,10 @@ df = pd.read_csv("raw_data.csv")
 # df2 = df2.to_csv("sorted_data.csv")
 # print(df2)
 
-print(df.groupby("gender")["income"].mean())
-print(df.groupby("gender")["income"].min())
-print(df.groupby("gender")["income"].max())
+# print(df.groupby("gender")["income"].mean())
+# print(df.groupby("gender")["income"].min())
+# print(df.groupby("gender")["income"].max())
+
+print(df.groupby("country")["income"].mean())
+print(df.groupby("country")["income"].min())
+print(df.groupby("country")["income"].max())
