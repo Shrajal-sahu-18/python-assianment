@@ -1,7 +1,7 @@
 import pandas as pd
 
 df = pd.read_csv("raw_data.csv")
-print(df)
+# print(df)
 
 # df = pd.read_json("empolyee_data.json")
 # print(df)
@@ -73,10 +73,14 @@ print(df)
 
 #practice task
 
-df2 = df.copy()
-df2 = df2.drop_duplicates()
-df2 = df2.fillna(0)
-df2 = df2.sort_values("income")
-df2 = df2.reset_index(drop = True)
-df2 = df2.to_csv("sorted_data.csv")
-print(df2)
+# df2 = df.copy()
+# df2 = df2.drop_duplicates()
+# df2 = df2.fillna(0)
+# df2 = df2.sort_values("income")
+# df2 = df2.reset_index(drop = True)
+# df2 = df2.to_csv("sorted_data.csv")
+# print(df2)
+
+print(df.groupby("gender")["income"].mean())
+print(df.groupby("gender")["income"].min())
+print(df.groupby("gender")["income"].max())
