@@ -95,3 +95,24 @@ print(df.groupby("country")["income"].agg(["mean","min","max"]))
 print(df.groupby("country")["income"].agg(avg_salary = "mean",min_salary = "min",max_salary = "max"))
 print(df.groupby("country").agg(avg_salary = ("income","mean"),min_salary = ("age","min")))
 print(df.groupby("country").agg({"income":"mean","age":"min"}))
+
+
+df = pd.DataFrame({
+    "country": ["USA","USA","India","India"],
+    "year":[2020,2021,2020,2021],
+    "sales": [100,120,90,22],
+    "profit": [20,25,18,22],
+    # "tax":[20,25,18,22]
+})
+melted_df = df.melt(
+    id_vars = ["country","year"],
+    value_vars = ["sales","profit"],#"tax"],
+    var_name = "metrics",
+    value_name = "value"
+)
+melted_df.pivot(
+    index = ["country","year"],
+    columns = "metrics", 
+    values = "value"
+)
+print(melted_df)
