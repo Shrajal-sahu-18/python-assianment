@@ -88,3 +88,7 @@ df = pd.read_csv("raw_data.csv")
 print(df.groupby("country")["income"].mean())
 print(df.groupby("country")["income"].min())
 print(df.groupby("country")["income"].max())
+
+
+
+print(df.groupby("country")["income"].agg(["mean","min","max"]))
