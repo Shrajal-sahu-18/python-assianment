@@ -93,3 +93,4 @@ print(df.groupby("country")["income"].max())
 
 print(df.groupby("country")["income"].agg(["mean","min","max"]))
 print(df.groupby("country")["income"].agg(avg_salary = "mean",min_salary = "min",max_salary = "max"))
+print(df.groupby("country").agg(avg_salary = ("income","mean"),min_salary = ("age","min")))
