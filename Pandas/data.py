@@ -116,3 +116,8 @@ melted_df.pivot(
     values = "value"
 )
 print(melted_df)
+
+
+
+df = pd.read_csv("employee_data.csv")
+df["Age"].hist()
