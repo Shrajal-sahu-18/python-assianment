@@ -31,3 +31,15 @@ group = df.groupby("species").agg({
 })
 print("\n group result:")
 group
+
+
+
+#-----------------------D-----------------
+#creating new column petal_ratio
+df["petal_ratio"] = df["petal_length"] / df["petal_width"] 
+# mean of petal_ratio
+ratio = df.groupby("species")["petal_ratio"].mean()
+#another method
+petal_rat = df.groupby("species").agg({"petal_ratio":"mean"})
+print(petal_rat)
+print(ratio)
