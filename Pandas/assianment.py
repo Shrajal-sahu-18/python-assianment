@@ -11,3 +11,9 @@ print(df.shape)
 print("\n summary staticis:")
 print(df.describe())
 
+
+
+#-----------------B----------
+filtered = df[(df["petal_length"] > 4.5) & (df["species"] == "Iris-virginica")]
+print("\n filtered data:")
+print(filtered)
