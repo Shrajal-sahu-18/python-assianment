@@ -10,5 +10,5 @@ learning journey
 - Pandas
 
 ## Teacher 
-Shradha khapra ma'am
+Shradha khapra ma'am (Apna Collage)
 
