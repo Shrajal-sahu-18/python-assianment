@@ -53,4 +53,6 @@ selected_column = df[["Name","Age","Sex","Fare","Survived"]]
 selected_column = selected_column.head()
 print(selected_column)
 
-
+#Task-2
+passenger = df[(df["Sex"] == "female") & (df["Fare"] > 30)]
+print(passenger)
