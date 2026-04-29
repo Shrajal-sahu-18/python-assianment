@@ -56,3 +56,12 @@ print(selected_column)
 #Task-2
 passenger = df[(df["Sex"] == "female") & (df["Fare"] > 30)]
 print(passenger)
+
+#Task-3
+group = df.groupby("Pclass").agg({
+    "Survived":"mean",
+    "Fare":"mean",
+    "Age":"mean"
+
+})
+print(group)
