@@ -121,3 +121,4 @@ print(melted_df)
 
 df = pd.read_csv("employee_data.csv")
 df["Age"].hist()
+df.plot(kind = "scatter",x = "Age",y = "Salary")
