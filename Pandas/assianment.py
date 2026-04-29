@@ -17,3 +17,17 @@ print(df.describe())
 filtered = df[(df["petal_length"] > 4.5) & (df["species"] == "Iris-virginica")]
 print("\n filtered data:")
 print(filtered)
+
+
+
+#----------------C-------------
+
+
+group = df.groupby("species").agg({
+    "sepal_length":"mean",
+    "petal_length":"max",
+    "sepal_width":"std"
+   
+})
+print("\n group result:")
+group
