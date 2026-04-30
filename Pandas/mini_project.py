@@ -38,3 +38,7 @@ print("\n clean data shape:\n",df.shape)
 #event anaylsic
 df = df.rename(columns ={"user_action":"event_type"})
 print("\n evevts_counts:\n",df["event_type"].value_counts())
+
+#basic matrics
+total_users = df["user_id"].nunique()
+total_events = df.shape[0]
