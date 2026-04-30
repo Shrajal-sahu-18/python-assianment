@@ -30,3 +30,6 @@ df = df.dropna()
 
 #convert time
 df["timestamp_utc"] = pd.to_datetime(df["timestamp_utc"])
+
+#drop duplicate
+df = df.drop_duplicates()
