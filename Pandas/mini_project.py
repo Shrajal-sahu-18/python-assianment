@@ -68,3 +68,7 @@ print(df.groupby("brand")["price"].mean().sort_values(ascending = False).head(10
 #new column
 df["Month"] = df["timestamp_utc"].dt.month_name()
 df["timestamp_utc"].dt.month.unique()
+
+# Activity
+print("\n monthly activity: \n")
+df.groupby("Month")["event_type"].count()
