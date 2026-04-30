@@ -24,3 +24,6 @@ print("\n First Five Rows:",df.head(5))
 #=====================
 #mising value
 print("\n missing value\n", df.isnull().sum())
+
+#drop missing value row
+df = df.dropna()
