@@ -42,3 +42,12 @@ print("\n evevts_counts:\n",df["event_type"].value_counts())
 #basic matrics
 total_users = df["user_id"].nunique()
 total_events = df.shape[0]
+print("\n total users:\n",total_users)
+print("\n total_events:\n",total_events)
+
+
+#Top product
+print("\n Top 10 viewed product:\n")
+print(df[df["event_type"] == "view"]["product_id"].value_counts().head(10))
+print("\n Top 10 purchased prodcut:\n")
+print(df[df["event_type"] == "purchase"]["product_id"].value_counts().head(10))
