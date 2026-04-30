@@ -6,4 +6,11 @@ path = kagglehub.dataset_download("noopurbhatt/retail-intelligence-100k-user-beh
 print(os.listdir(path))
 
 df = pd.read_csv(path +"/retail_user_behavior_100k.csv")
-print(df)
+
+#=====================
+# Task-1 
+#Basic_info
+#=====================
+#Task - 1  Basic Info 
+print("\n shape:",df.shape)
+print("\n columns:", df.columns)
