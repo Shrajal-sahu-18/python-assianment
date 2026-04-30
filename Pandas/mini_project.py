@@ -33,3 +33,8 @@ df["timestamp_utc"] = pd.to_datetime(df["timestamp_utc"])
 
 #drop duplicate
 df = df.drop_duplicates()
+print("\n clean data shape:\n",df.shape)
+
+#event anaylsic
+df = df.rename(columns ={"user_action":"event_type"})
+print("\n evevts_counts:\n",df["event_type"].value_counts())
