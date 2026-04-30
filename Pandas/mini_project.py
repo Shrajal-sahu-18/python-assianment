@@ -27,3 +27,6 @@ print("\n missing value\n", df.isnull().sum())
 
 #drop missing value row
 df = df.dropna()
+
+#convert time
+df["timestamp_utc"] = pd.to_datetime(df["timestamp_utc"])
