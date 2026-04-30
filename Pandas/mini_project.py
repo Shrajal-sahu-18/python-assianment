@@ -65,3 +65,6 @@ print(df[df["event_type"] == "purchase"]["brand"].value_counts().head(10))
 print("\n avarage price per brand: \n")
 print(df.groupby("brand")["price"].mean().sort_values(ascending = False).head(10))
 
+#new column
+df["Month"] = df["timestamp_utc"].dt.month_name()
+df["timestamp_utc"].dt.month.unique()
