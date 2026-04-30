@@ -72,3 +72,7 @@ df["timestamp_utc"].dt.month.unique()
 # Activity
 print("\n monthly activity: \n")
 df.groupby("Month")["event_type"].count()
+
+print("\n Hourly activity:\n")
+df["Hour"] = df["timestamp_utc"].dt.hour
+print(df.groupby("Hour")["event_type"].count())
