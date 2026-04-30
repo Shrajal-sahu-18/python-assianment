@@ -51,3 +51,8 @@ print("\n Top 10 viewed product:\n")
 print(df[df["event_type"] == "view"]["product_id"].value_counts().head(10))
 print("\n Top 10 purchased prodcut:\n")
 print(df[df["event_type"] == "purchase"]["product_id"].value_counts().head(10))
+
+
+#category anaylsis
+print("\n Top category: \n")
+print(df.groupby("category")["event_type"].count().sort_values(ascending = False).head(10))
