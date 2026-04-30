@@ -60,3 +60,8 @@ print(df.groupby("category")["event_type"].count().sort_values(ascending = False
 
 #Brand analysis
 print(df[df["event_type"] == "purchase"]["brand"].value_counts().head(10))
+
+#average price per brand
+print("\n avarage price per brand: \n")
+print(df.groupby("brand")["price"].mean().sort_values(ascending = False).head(10))
+
