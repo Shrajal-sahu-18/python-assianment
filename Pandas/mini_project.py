@@ -82,3 +82,4 @@ print(df.groupby("Hour")["event_type"].count())
 #conversional funnel
 
 view = df[df["event_type"] == "view"]["user_id"].nunique()
+cart = df[df["event_type"] == "add_to_cart"]["user_id"].nunique()
