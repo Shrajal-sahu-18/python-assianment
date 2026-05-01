@@ -105,3 +105,7 @@ print("\n repeated customer:\n",len(repeat_customer))
 high_value = df[df["price"] > 400]
 print("\n high value purchase:\n")
 print(high_value[high_value["event_type"] == "purchase"]["product_id"].value_counts().head(10))
+
+#clean data convert to csv file
+df.to_csv("clean_data.csv",index = False)
+print("\n project completed")
