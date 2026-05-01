@@ -103,3 +103,5 @@ print("\n repeated customer:\n",len(repeat_customer))
 #High value product
 
 high_value = df[df["price"] > 400]
+print("\n high value purchase:\n")
+print(high_value[high_value["event_type"] == "purchase"]["product_id"].value_counts().head(10))
