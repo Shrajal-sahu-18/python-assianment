@@ -98,3 +98,8 @@ print("\nconversion_rate:",conversion_rate)
 repeat_customer = df[df["event_type"] == "purchase"]["user_id"].value_counts()
 repeat_customer = repeat_customer[repeat_customer > 1]
 print("\n repeated customer:\n",len(repeat_customer))
+
+
+#High value product
+
+high_value = df[df["price"] > 400]
