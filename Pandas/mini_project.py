@@ -92,3 +92,9 @@ print("purchase:",purchase)
 
 conversion_rate = purchase/view
 print("\nconversion_rate:",conversion_rate)
+
+
+#Repeat customer
+repeat_customer = df[df["event_type"] == "purchase"]["user_id"].value_counts()
+repeat_customer = repeat_customer[repeat_customer > 1]
+print("\n repeated customer:\n",len(repeat_customer))
