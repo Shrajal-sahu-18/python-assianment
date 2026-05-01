@@ -89,3 +89,6 @@ print("\n user funnel:\n")
 print("views:",view)
 print("add_to_cart:",cart)
 print("purchase:",purchase)
+
+conversion_rate = purchase/view
+print("\nconversion_rate:",conversion_rate)
