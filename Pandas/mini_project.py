@@ -76,3 +76,9 @@ df.groupby("Month")["event_type"].count()
 print("\n Hourly activity:\n")
 df["Hour"] = df["timestamp_utc"].dt.hour
 print(df.groupby("Hour")["event_type"].count())
+
+
+
+#conversional funnel
+
+view = df[df["event_type"] == "view"]["user_id"].nunique()
