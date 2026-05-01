@@ -84,3 +84,8 @@ print(df.groupby("Hour")["event_type"].count())
 view = df[df["event_type"] == "view"]["user_id"].nunique()
 cart = df[df["event_type"] == "add_to_cart"]["user_id"].nunique()
 purchase = df[df["event_type"] == "purchase"]["user_id"].nunique()
+
+print("\n user funnel:\n")
+print("views:",view)
+print("add_to_cart:",cart)
+print("purchase:",purchase)
